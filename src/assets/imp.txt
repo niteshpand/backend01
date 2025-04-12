@@ -1,0 +1,40 @@
+<!-- <h2>Hello this is starting the project</h2>
+
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+  <li ngbNavItem>
+    <a ngbNavLink>First</a>
+    <ng-template ngbNavContent>First content</ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>Second</a>
+    <ng-template ngbNavContent>Second content</ng-template>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
+<i data-feather="circle"></i>
+<i data-feather="align-center"></i> -->
+<!-- <app-feather-icon icon="circle"></app-feather-icon>
+<p>Hello this is nitesh pandey</p>
+<app-feather-icon icon="align-center"></app-feather-icon> -->
+
+=====================================================
+import { Component } from '@angular/core';
+import * as feather from 'feather-icons';
+import { ToastrService } from 'ngx-toastr';
+import Swal from 'sweetalert2';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent 
+  title = 'backend01';
+
+  constructor(private _toastr: ToastrService) {}
+  ngOnInit() {
+    // feather.replace();
+    // this._toastr.success('Data Save !!', ' User Master');
+    // this._toastr.error('Error Occured !!', ' User Master');
+    // this._toastr.warning('Please update email id first !!', ' User Master');
+    // Swal.fire('SweetAlert2 is working!');
+  }
